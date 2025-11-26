@@ -15,30 +15,30 @@ A Node.js-based utility for converting binary files to Wozmon formatted text for
 
 ### From NPM
 
-```bash
+```
 npm install -g bin2woz
 ```
 
 ### From Source
 
 1. Clone the repository:
-```bash
+```
 git clone https://github.com/acwright/bin2woz.git
 cd bin2woz
 ```
 
 2. Install dependencies:
-```bash
+```
 npm install
 ```
 
 3. Build the project:
-```bash
+```
 npm run build
 ```
 
 4. (Optional) Link globally:
-```bash
+```
 npm link
 ```
 
@@ -48,7 +48,7 @@ npm link
 
 Convert a binary file to Wozmon format starting at address 0x0000:
 
-```bash
+```
 bin2woz <path-to-binary-file>
 ```
 
@@ -56,19 +56,19 @@ bin2woz <path-to-binary-file>
 
 Specify a custom starting address in hexadecimal:
 
-```bash
+```
 bin2woz -a 0x800 <path-to-binary-file>
 ```
 
 or
 
-```bash
+```
 bin2woz --address 0x800 <path-to-binary-file>
 ```
 
 ### Redirect Output to File
 
-```bash
+```
 bin2woz -a 0x800 program.prg > output.txt
 ```
 
@@ -94,7 +94,7 @@ Each line contains:
 
 ## Example
 
-```bash
+```
 # Convert a 6502 program binary starting at address 0x800
 bin2woz -a 0x800 /path/to/binary/file.prg > output.txt
 ```
@@ -103,14 +103,14 @@ bin2woz -a 0x800 /path/to/binary/file.prg > output.txt
 
 ### Run in Development Mode
 
-```bash
+```
 npm run build
 node ./dist/index.js -a 0x800 <path-to-binary-file>
 ```
 
 ### Release Build
 
-```bash
+```
 git tag vX.Y.Z
 git push origin main --tags
 npm publish
