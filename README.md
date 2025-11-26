@@ -108,6 +108,14 @@ npm run build
 node ./dist/index.js -a 0x800 <path-to-binary-file>
 ```
 
+### Release Build
+
+```bash
+git tag vX.Y.Z
+git push origin main --tags
+npm publish
+```
+
 ### Project Structure
 
 ```
