@@ -1,0 +1,33 @@
+{
+  "name": "bin2woz",
+  "version": "1.0.0",
+  "description": "Convert binary files to Wozmon compatible text",
+  "main": "index.js",
+  "bin": {
+    "bin2woz": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node ./dist/index.js"
+  },
+  "keywords": [
+    "6502",
+    "Wozmon",
+    "binary",
+    "assembly",
+    "typescript"
+  ],
+  "author": "A.C. Wright",
+  "license": "MIT",
+  "repository": "https://github.com/acwright/bin2woz",
+  "homepage": "https://github.com/acwright/bin2woz/README.md",
+  "type": "commonjs",
+  "dependencies": {
+    "commander": "^14.0.1",
+    "figlet": "^1.9.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.7.0",
+    "typescript": "^5.9.3"
+  }
+}
