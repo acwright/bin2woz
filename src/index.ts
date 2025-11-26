@@ -4,7 +4,7 @@ import figlet from 'figlet'
 import { Command, InvalidArgumentError } from 'commander'
 import { Bin2Woz } from './Bin2Woz/Bin2Woz'
 
-const VERSION = '1.0.1'
+const VERSION = '1.0.2'
 
 const bin2woz = new Bin2Woz()
 
