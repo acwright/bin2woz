@@ -4,7 +4,7 @@
   "description": "Convert binary files to Wozmon compatible text",
   "main": "index.js",
   "bin": {
-    "bin2woz": "./dist/index.js"
+    "bin2woz": "dist/index.js"
   },
   "scripts": {
     "build": "npx tsc",
@@ -19,7 +19,10 @@
   ],
   "author": "A.C. Wright",
   "license": "MIT",
-  "repository": "https://github.com/acwright/bin2woz",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acwright/bin2woz.git"
+  },
   "homepage": "https://github.com/acwright/bin2woz/README.md",
   "type": "commonjs",
   "dependencies": {
