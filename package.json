@@ -23,7 +23,7 @@
     "type": "git",
     "url": "git+https://github.com/acwright/bin2woz.git"
   },
-  "homepage": "https://github.com/acwright/bin2woz/README.md",
+  "homepage": "https://github.com/acwright/bin2woz",
   "type": "commonjs",
   "dependencies": {
     "commander": "^14.0.1",
